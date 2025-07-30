@@ -8,6 +8,7 @@
     <title>Javascream - Rock Paper Scissors</title>
 </head>
 <body>
+    <canvas id="starfield"></canvas>
     <div class="container">
         <header>
             <div class="header-content">
@@ -23,14 +24,18 @@
         </header>
         <main>
             <div class="card rps-game">
-                <h2>Play Rock Paper Scissors!</h2>
+                <h2>Rock Paper Scissors!</h2>
+                <!-- Saturn Rings -->
+                <div class="saturn-ring ring1"></div>
+                <div class="saturn-ring ring2"></div>
+                <div class="saturn-ring ring3"></div>
                 <div class="choices">
-                    <button class="choice" data-choice="rock">🪨 Rock</button>
-                    <button class="choice" data-choice="paper">📄 Paper</button>
-                    <button class="choice" data-choice="scissors">✂️ Scissors</button>
+                    <button class="choice" data-choice="rock">🪨</button>
+                    <button class="choice" data-choice="paper">📄</button>
+                    <button class="choice" data-choice="scissors">✂️</button>
                 </div>
                 <div class="result">
-                    <p id="user-choice">Your choice: -</p>
+                    <p id="user-choice">Your choice: -</p>  
                     <p id="computer-choice">Computer's choice: -</p>
                     <h3 id="game-result">Result: -</h3>
                 </div>

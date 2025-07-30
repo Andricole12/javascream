@@ -28,8 +28,26 @@ main {
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background: #f4f6fb;
-    color: #222;
+    background: #0a0a23; /* Deep space color */
+    color: #504a5d;
+    position: relative;
+    overflow: hidden;
+}
+
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    display: block;
+    pointer-events: none;
+}
+
+.container, header, main, footer {
+    position: relative;
+    z-index: 1;
 }
 
 .container {
@@ -72,7 +90,7 @@ nav a:hover {
 }
 
 .card {
-    background: #fff;
+    background: #bab1e8;
     margin: 2rem auto;
     padding: 2rem;
     max-width: 600px;
@@ -134,4 +152,83 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at 60% 40%, #ffe9a3 60%, #e6c16e 80%, #bfa76a 100%);
+    box-shadow: 0 0 60px 10px #e6c16e, 0 0 0 8px #e5e3bf inset;
+    position: relative;
+    margin: 2rem auto;
+    padding: 2rem 1rem 1rem 1rem;
+    overflow: visible;
+}
+
+/* Saturn-like ring as an outline using a pseudo-element */
+.saturn-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background: transparent;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.saturn-ring.ring1 {
+    width: 620px;
+    height: 40px;
+    border: 4px solid #e6c16e;
+    opacity: 0.7;
+}
+
+.saturn-ring.ring2 {
+    width: 600px;
+    height: 28px;
+    border: 3px solid #e6c16e;
+    opacity: 0.5;
+}
+
+.saturn-ring.ring3 {
+    width: 580px;
+    height: 18px;
+    border: 2px solid #e6c16e;
+    opacity: 0.35;
+}
+
+.rps-game h2,
+.rps-game .choices,
+.rps-game .result {
+    position: relative;
+    z-index: 1;
+}
+
+.rps-game .choices {
+    display: flex;
+    gap: 1.2rem;
+    margin: 1.2rem 0;
+}
+
+.rps-game .choice {
+    background: #ffd700;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.7rem;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.12);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+.rps-game .choice:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 16px #ffd70088;
+}
+
+.rps-game .result {
+    text-align: center;
+    margin-top: 1rem;
+    color: #504a5d;
 }
