@@ -5,35 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-    <title>Javascream</title>
+    <title>Javascream - Rock Paper Scissors</title>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="header-content">
-                <h1>Welcome to Javascream</h1>
+                <h1>Rock Paper Scissors</h1>
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Game</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <div class="card hero">
-                <h2>Modern JavaScript Playground</h2>
-                <p>Experiment, learn, and build with JavaScript in a beautiful environment.</p>
-                <button>Get Started</button>
-            </div>
-            <div class="card features">
-                <h3>Features</h3>
-                <ul>
-                    <li>Live code editor</li>
-                    <li>Instant preview</li>
-                    <li>Community support</li>
-                </ul>
+            <div class="card rps-game">
+                <h2>Play Rock Paper Scissors!</h2>
+                <div class="choices">
+                    <button class="choice" data-choice="rock">🪨 Rock</button>
+                    <button class="choice" data-choice="paper">📄 Paper</button>
+                    <button class="choice" data-choice="scissors">✂️ Scissors</button>
+                </div>
+                <div class="result">
+                    <p id="user-choice">Your choice: -</p>
+                    <p id="computer-choice">Computer's choice: -</p>
+                    <h3 id="game-result">Result: -</h3>
+                </div>
             </div>
         </main>
         <footer>
