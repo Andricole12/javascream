@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f4f6fb;
+    color: #222;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background: #263445;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.card {
+    background: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 600px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.10);
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero button {
+    background: linear-gradient(90deg, #263445 60%, #ffd700 100%);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.hero button:hover {
+    background: linear-gradient(90deg, #ffd700 60%, #263445 100%);
+}
+
+.features ul {
+    padding-left: 1.2rem;
+}
+
+.features li {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+
+footer {
+    background: #263445;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-radius: 16px 16px 0 0;
+    font-size: 0.95rem;
+    box-shadow: 0 -2px 8px rgba(44,62,80,0.08);
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
